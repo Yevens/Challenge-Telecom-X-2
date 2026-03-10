@@ -1,21 +1,9 @@
 # Challenge-Telecom-X-2
 
 # TelecomX — Predicción de Cancelación de Clientes (Churn)
-
-<p align="center">
-  <img src="https://img.shields.io/badge/Python-3.10%2B-blue?style=for-the-badge&logo=python&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Jupyter-Notebook-orange?style=for-the-badge&logo=jupyter&logoColor=white"/>
-  <img src="https://img.shields.io/badge/scikit--learn-ML-green?style=for-the-badge&logo=scikit-learn&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Status-Completo-brightgreen?style=for-the-badge"/>
-</p>
-
-<p align="center">
-  Pipeline completo de Machine Learning para predecir qué clientes de una empresa de telecomunicaciones tienen mayor probabilidad de cancelar sus servicios.
-</p>
-
 ---
 
-## 📋 Tabla de Contenidos
+##  Tabla de Contenidos
 
 - [Descripción del Proyecto](#-descripción-del-proyecto)
 - [Estructura del Proyecto](#-estructura-del-proyecto)
@@ -26,7 +14,7 @@
 - [Principales Hallazgos](#-principales-hallazgos)
 ---
 
-## 🎯 Descripción del Proyecto
+## Descripción del Proyecto
 
 TelecomX enfrenta un problema crítico de **retención de clientes**: una parte significativa de su base cancela el servicio mensualmente. Este proyecto construye un **pipeline predictivo de extremo a extremo** capaz de:
 
@@ -38,7 +26,7 @@ TelecomX enfrenta un problema crítico de **retención de clientes**: una parte 
 
 ---
 
-## 📁 Estructura del Proyecto
+## Estructura del Proyecto
 
 ```
 telecomx-churn/
@@ -64,7 +52,7 @@ telecomx-churn/
 
 ---
 
-## 📊 Dataset
+## Dataset
 
 El archivo `TelecomX_Data.json` contiene **7,267 registros** de clientes con la siguiente estructura anidada:
 
@@ -110,7 +98,7 @@ El archivo `TelecomX_Data.json` contiene **7,267 registros** de clientes con la 
 
 ---
 
-## 🔄 Pipeline de Análisis
+## Pipeline de Análisis
 
 ```
 Carga JSON  →  Limpieza  →  Feature Engineering  →  Encoding  →  Balanceo
@@ -155,17 +143,17 @@ Conclusiones Estratégicas  →  Recomendaciones de Retención
 
 ---
 
-## 🤖 Modelos Implementados
+## Modelos Implementados
 
 | Modelo | Normalización | Justificación |
 |---|:---:|---|
-| **Regresión Logística** | ✅ Sí | Sensible a la escala; coeficientes directamente interpretables |
-| **Random Forest** | ❌ No | Basado en árboles; robusto sin escalar; alta interpretabilidad |
-| **Gradient Boosting** | ❌ No | Ensemble iterativo; mejor captura de patrones no lineales complejos |
+| **Regresión Logística** | Sí | Sensible a la escala; coeficientes directamente interpretables |
+| **Random Forest** | No | Basado en árboles; robusto sin escalar; alta interpretabilidad |
+| **Gradient Boosting** | No | Ensemble iterativo; mejor captura de patrones no lineales complejos |
 
 ---
 
-## 📈 Resultados
+## Resultados
 
 ### Métricas Comparativas (sobre conjunto de test)
 
@@ -185,23 +173,23 @@ Conclusiones Estratégicas  →  Recomendaciones de Retención
 
 ---
 
-## 🔑 Principales Hallazgos
+## Principales Hallazgos
 
 Los **7 factores con mayor influencia** en la cancelación (importancia consensuada de los 3 modelos):
 
 | # | Factor | Impacto | Descripción |
 |---|---|:---:|---|
-| 1 | **Contrato Mes a Mes** | 🔴 Muy Alto | 3–4× más churn que contratos anuales o bianuales |
-| 2 | **Tenure (antigüedad)** | 🔵 Protector | A mayor antigüedad, menor riesgo; clientes < 12 meses son los más vulnerables |
-| 3 | **Cargo Mensual / Diario** | 🟠 Moderado | Tarifas altas sin valor percibido generan insatisfacción |
-| 4 | **Internet Fibra Óptica** | 🟠 Moderado | Mayor expectativa de calidad; más sensible a fallas de servicio |
-| 5 | **Facturación Electrónica** | 🟡 Leve | Perfil digital más propenso a comparar y cambiar de proveedor |
-| 6 | **Sin servicios adicionales** | 🟡 Leve | Menor "stickiness": sin OnlineSecurity, TechSupport ni DeviceProtection |
-| 7 | **Pago por Cheque Electrónico** | 🟡 Leve | Menor automatización = cliente menos comprometido |
+| 1 | **Contrato Mes a Mes** |  Muy Alto | 3–4× más churn que contratos anuales o bianuales |
+| 2 | **Tenure (antigüedad)** |  Protector | A mayor antigüedad, menor riesgo; clientes < 12 meses son los más vulnerables |
+| 3 | **Cargo Mensual / Diario** | Moderado | Tarifas altas sin valor percibido generan insatisfacción |
+| 4 | **Internet Fibra Óptica** |  Moderado | Mayor expectativa de calidad; más sensible a fallas de servicio |
+| 5 | **Facturación Electrónica** |  Leve | Perfil digital más propenso a comparar y cambiar de proveedor |
+| 6 | **Sin servicios adicionales** |  Leve | Menor "stickiness": sin OnlineSecurity, TechSupport ni DeviceProtection |
+| 7 | **Pago por Cheque Electrónico** |  Leve | Menor automatización = cliente menos comprometido |
 
 ---
 
-## 💡 Estrategias de Retención
+## Estrategias de Retención
 
 | Segmento de Riesgo | Estrategia Recomendada |
 |---|---|
@@ -215,7 +203,7 @@ Los **7 factores con mayor influencia** en la cancelación (importancia consensu
 
 ---
 
-## 🛠️ Tecnologías Utilizadas
+## Tecnologías Utilizadas
 
 | Librería | Versión | Uso |
 |---|---|---|
@@ -228,7 +216,7 @@ Los **7 factores con mayor influencia** en la cancelación (importancia consensu
 | `jupyter` | ≥ 1.0 | Entorno de ejecución interactivo |
 ---
 
-## 📄 Licencia
+## Licencia
 
 Este proyecto fue desarrollado con fines educativos y de análisis. Libre para usar y adaptar con atribución.
 
